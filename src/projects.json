@@ -1,0 +1,24 @@
+{
+    "data": {
+        "projects": [
+            {
+                "id": "0",
+                "project_name": "Weather App",
+                "description": "Search the weather in any city/country. Image dynamically changes if it's hot or cold.",
+                "technologies": ["React", "CSS", "NodeJS"],
+                "live_link": "",
+                "github_link": "https://github.com/Bigjames728/weather-app",
+                "image_urls": ["/images/LPProject1.png", "/images/ExtraProject1.png"]
+            },
+            {
+                "id": "1",
+                "project_name": "Fehr Law Website",
+                "description": "A website I created for a client includeing a contact us form and a map to their location.",
+                "technologies": ["Bootstrap", "CSS", "HTML", "PHP"],
+                "live_link": "http://fehrlaw.net/",
+                "github_link": "",
+                "image_urls": ["/images/FehrLawSite.png", "/images/FehrLawSiteFullPage.png"]
+            }
+        ]
+    }
+}
