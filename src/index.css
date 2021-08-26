@@ -3,9 +3,10 @@ body {
 }
 
 .App {
-  height: 500px;
+  height: auto;
   width: auto;
   margin: auto;
+  padding-bottom: 20px;
   background-color: #efefef;
   border-radius: 10px;
   text-align: center;
@@ -57,3 +58,36 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.project-images {
+  height: 300px;
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0px 6px 6px 0 rgba(0, 0, 0, 0.4);
+  transition: all .3s;
+}
+
+/* no longer working after using framer-motion */
+.project-images:hover {
+  transform: scale(1.05);
+}
+
+.project-name {
+  padding: 10px;
+  margin-top: 10px;
+  text-decoration: none;
+  font-size: larger;
+  color: black;
+  font-family: arial black;
+}
+
+
+
+
