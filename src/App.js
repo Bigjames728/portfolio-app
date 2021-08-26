@@ -1,5 +1,6 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
+
 
 // CSS Styles
 import './index.css'
@@ -9,6 +10,7 @@ import Header from './components/Header';
 import About from './components/About';
 import Articles from './components/Articles';
 import Projects from './components/Projects';
+import ProjectDetails from './components/ProjectDetails';
 
 
 
@@ -18,7 +20,9 @@ function App() {
       <div className="App">
         <Header />
         <Switch>
-            <Route exact path="/" component={Projects} />
+            <Route exact path="/" render={() => <Redirect to="/projects" />} />
+            <Route exact path="/projects" component={Projects} />
+            <Route exact path="/projects/:id" component={ProjectDetails} />
             <Route exact path="/articles" component={''} />
             <Route exact path="/about" component={About} />
         </Switch>
