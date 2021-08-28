@@ -18,7 +18,7 @@ function Projects() {
         )
         .then(response => response.json())
         .then((projects) => {
-            console.log(projects.data.projects[0]);
+            console.log(projects.data.projects);
             setProjects(projects.data.projects);
             
         })
