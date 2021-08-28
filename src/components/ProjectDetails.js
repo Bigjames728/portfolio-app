@@ -6,27 +6,12 @@ const ProjectDetails = ({ match }) => {
         params: { id },
     } = match;
 
-    const [projects, setProjects] = useState(null);
+    console.log(match)
 
-    const getData = () => {
-        fetch('data.json'
-        ,{
-            headers: {
-                'Content-Type': 'application/json',
-                'Accept': 'application/json'
-            }
-        }
-        )
-        .then(response => response.json())
-        .then((projects) => {
-            console.log(projects.data.projects[0]);
-            setProjects(projects.data.projects);
-            
-        })
-    };
+    
 
     useEffect(() => {
-        getData()
+        
     }, [])
 
     return (
