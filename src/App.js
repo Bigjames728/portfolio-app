@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
+import { BrowserRouter as Router, withRouter, Route, Switch, Redirect } from 'react-router-dom';
 
 
 // CSS Styles
@@ -31,4 +31,4 @@ function App() {
   );
 }
 
-export default App;
+export default withRouter(App);
