@@ -22,7 +22,7 @@ function App() {
         <Switch>
             <Route exact path="/" render={() => <Redirect to="/projects" />} />
             <Route exact path="/projects" component={Projects} />
-            <Route exact path="/projects/:id" component={ProjectDetails} />
+            <Route path="/projects/:id" render={({match}) => <ProjectDetails id={match.params.id} />} />
             <Route exact path="/articles" component={''} />
             <Route exact path="/about" component={About} />
         </Switch>
