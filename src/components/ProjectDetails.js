@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from 'react';
 
 
-export default function ProjectDetails() {
+export default function ProjectDetails({id}) {
 
     const [projects, setProjects] = useState([]);
 
+
     const getData = () => {
-        fetch('data.json'
+        fetch('../data.json'
         ,{
             headers: {
                 'Content-Type': 'application/json',
@@ -40,6 +41,7 @@ export default function ProjectDetails() {
                                 <div>
                                     <h3 className="course--detail--title">Project</h3>
                                     <h4 className="course--name">{projects.project_name}</h4>
+                                    <h4>{id}</h4>
                                     
                                     
                                 </div>
