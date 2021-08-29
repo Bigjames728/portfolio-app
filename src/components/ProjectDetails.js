@@ -18,7 +18,7 @@ export default function ProjectDetails({id}) {
         .then(response => response.json())
         .then((projects) => {
             const matched = projects.data.projects.filter(project => project.id === id);
-            setProjects(matched);
+            setProjects(matched[0]);
             console.log(matched);
             console.log(projects);
         })
