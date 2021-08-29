@@ -6,13 +6,7 @@ const ProjectDetails = ({ match }) => {
         params: { id },
     } = match;
 
-    console.log(match)
-
     
-
-    useEffect(() => {
-        
-    }, [])
 
     return (
         <div>
