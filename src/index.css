@@ -66,6 +66,10 @@ body {
   margin-top: 20px;
 }
 
+.main--flex {
+  display: flex;
+}
+
 .project-images {
   height: 300px;
   width: 300px;
@@ -88,6 +92,21 @@ body {
   font-family: arial black;
 }
 
+ul {
+  
+  list-style-position: inside;
+  text-indent: -1em;
+  padding-left: 1em;
 
+}
 
+.list--container {
+  padding: 20px;
+}
+
+.img--details {
+  width: 600px;
+}
+
+.description {}
 
