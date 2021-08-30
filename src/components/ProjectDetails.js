@@ -39,9 +39,13 @@ export default function ProjectDetails({id}) {
                     <h1>Project Details</h1>
                     <h3 className="course--name">{projects.project_name}</h3>
                         <div className="main--flex">
-                            <div>
+                            <div className="img--container">
                                 <img src={ projects.image_urls ?
-                                            projects.image_urls[0, 1] :
+                                            projects.image_urls[0] :
+                                            ''
+                                        } className="img--details" />
+                                <img src={ projects.image_urls ?
+                                            projects.image_urls[1] :
                                             ''
                                         } className="img--details" />
                             </div>
