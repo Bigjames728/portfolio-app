@@ -104,11 +104,19 @@ ul {
   padding: 20px;
 }
 
+/* The below class centered and then stacked images vertically */
+.img--container {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
 .img--details {
   width: 600px;
 }
 
 .description {
-  
+  width: 770px;
 }
 
