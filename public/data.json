@@ -18,6 +18,15 @@
                 "live_link": "http://fehrlaw.net/",
                 "github_link": "",
                 "image_urls": ["/images/FehrLawSite.png", "/images/FehrLawSiteFullPage.png"]
+            },
+            {
+                "id": "2",
+                "project_name": "Full Stack Class Creator/Selector",
+                "description": "A web application with protected routes requiring authentication. Once an account has been created, you can create a course or update a course that you have created. You can't update/delete courses that you do not own.",
+                "technologies": ["Node", "React", "Express", "HTML", "CSS", "SQLite"],
+                "live_link": "",
+                "github_link": "https://github.com/Bigjames728/Full-Stack-App",
+                "image_urls": ["/images/full-stack-app1.JPG", "/images/full-stack-app2.JPG", "/images/full-stack-app3.JPG"]
             }
         ]
     }
