@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react';
+import ReactMarkdown from 'react-markdown';
 
 
 export default function ProjectDetails({id}) {
 
     const [projects, setProjects] = useState([]);
+    
 
 
     const getData = () => {
@@ -33,30 +35,36 @@ export default function ProjectDetails({id}) {
     return (
         <main>
             <div className="flex-container">
-            
-                
                 <div className="wrap">
-                    <h2>Project Details</h2>
-                        <form>
-                            <div className="main--flex">
-                                <div>
-                                    <h3 className="course--detail--title">Project</h3>
-                                    <h4 className="course--name">{projects.project_name}</h4>
-                                    <h4>{id}</h4>
-                                    
-                                    
-                                </div>
-                                <div>
-                                    <h3 className="course--detail--title">Technologies Used</h3>
-                                    <ul className="course--detail--list">
-                                    {projects.technologies}
-                                    </ul>
-                                </div>
+                    <h1>Project Details</h1>
+                    <h3 className="course--name">{projects.project_name}</h3>
+                        <div className="main--flex">
+                            <div>
+                                <img src={ projects.image_urls ?
+                                            projects.image_urls[0, 1] :
+                                            ''
+                                        } className="img--details" />
                             </div>
-                        </form>
+                            <div className="list--container">
+                                <h3 className="course--detail--title">Technologies Used</h3>
+                                <ul className="course--detail--list">
+                                    {
+                                        projects.technologies ? 
+                                        projects.technologies.map(technology => (
+                                            <li key={technology.id}>
+                                                {technology}
+                                            </li>
+                                        )) :
+                                        ''
+                                    }
+                                </ul>
+                            </div>
+                        </div>
+                        <div className="description">
+                            <h3>Description</h3>
+                            <p>{projects.description}</p>
+                        </div>
                 </div>
-                
-            
             </div>
         </main>
     )
