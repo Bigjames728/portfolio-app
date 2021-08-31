@@ -7,13 +7,13 @@ class Header extends React.Component {
     state = {
         links: [
             { 
-                id: 1, name: 'About', url: '/about', value: '1'
+                id: 1, name: 'About', url: '/about'
             },
             { 
-                 id: 2, name: 'Articles', url: '/articles', value: '2'
+                 id: 2, name: 'Articles', url: '/articles'
             },
             { 
-                id: 3, name: 'Projects', url: '/projects', value: '3'
+                id: 3, name: 'Projects', url: '/projects'
             }
         ]
     };
@@ -27,6 +27,7 @@ class Header extends React.Component {
                     <img src='images/logo.PNG' className="header--logo" alt="Logo" />
                 </header>
 
+                {/* I was able to add active tab button by importing NavLink and setting the activeClassName attribute then styling that class in index.css.*/}
                 {links.map(link => {
                     return (
                         <div className="nav" key={link.id}>  
