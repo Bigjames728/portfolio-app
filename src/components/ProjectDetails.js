@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 
 export default function ProjectDetails({id}) {
 
     const [projects, setProjects] = useState([]);
     
-    const getData = () => {
+    const getData = useCallback(() => {
         fetch('../data.json'
         ,{
             headers: {
@@ -20,11 +20,11 @@ export default function ProjectDetails({id}) {
             console.log(matched);
             console.log(projects);
         })
-    };
+    }, [id]);
 
     useEffect(() => {
         getData()
-    },[]) 
+    }, [getData]) 
 
     
     return (
