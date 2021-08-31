@@ -24,7 +24,7 @@ export default function ProjectDetails({id}) {
 
     useEffect(() => {
         getData()
-    }, [getData]) 
+    }, [getData])
 
     
     return (
