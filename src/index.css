@@ -12,6 +12,26 @@ body {
   text-align: center;
 }
 
+/*The below code sets the menu items and logo at top as flexbox */
+.header--flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*The below code styles the logo at the top left */
+.header--logo {
+  width: 75px;
+  height: 75px;
+  float: left;
+  transition: all .5s;
+}
+
+.header--logo:hover {
+  transform: scale(1.2) rotate(5deg);
+}
+
+/*The below code styles the menu buttons at the top */
 .item {
   padding: 10px;
   margin-left: 60px;
@@ -25,49 +45,34 @@ body {
 }
 
 .item:hover, .item:focus {
+  border-bottom: solid 1px black;
+}
+
+.active {
+  background: lightgrey;
   border: solid 1px black;
-}
-
-.header--logo {
-  width: 75px;
-  height: 75px;
-  float: left;
-  transition: all .5s;
-}
-
-.header--logo:hover {
-  transform: scale(1.2) rotate(5deg);
-}
-
-.navigation {
-  height: 75px;
-}
-
-.navigation-sub-menu {
-  height: 75px;
-}
-
-.header--flex {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.header--flex {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .flex-container {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.flex-container-projectList {
+  display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
+  flex-direction: row;
   margin-top: 20px;
 }
 
 .main--flex {
   display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  
 }
 
 .project-images {
@@ -101,15 +106,16 @@ ul {
 }
 
 .list--container {
-  padding: 20px;
+  
+  
+  margin-top: -20px;
 }
 
 /* The below class centered and then stacked images vertically */
 .img--container {
   display: flex;
   flex-flow: column nowrap;
-  align-items: center;
-  justify-content: center;
+  
 }
 
 .img--details {
@@ -119,4 +125,6 @@ ul {
 .description {
   width: 770px;
 }
+
+
 
