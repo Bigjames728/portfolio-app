@@ -7,13 +7,13 @@ class Header extends React.Component {
     state = {
         links: [
             { 
-                id: 1, name: 'About', url: '/about'
+                id: 3, name: 'Projects', url: '/projects'
             },
             { 
                  id: 2, name: 'Articles', url: '/articles'
             },
             { 
-                id: 3, name: 'Projects', url: '/projects'
+                id: 1, name: 'About', url: '/about'
             }
         ]
     };
