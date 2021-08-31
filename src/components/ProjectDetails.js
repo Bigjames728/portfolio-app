@@ -1,13 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import ReactMarkdown from 'react-markdown';
-
 
 export default function ProjectDetails({id}) {
 
     const [projects, setProjects] = useState([]);
     
-
-
     const getData = () => {
         fetch('../data.json'
         ,{
@@ -31,7 +27,6 @@ export default function ProjectDetails({id}) {
     },[]) 
 
     
-
     return (
         <main>
             <div className="flex-container">
@@ -69,7 +64,7 @@ export default function ProjectDetails({id}) {
                     <h3>Description</h3>
                     <p>{projects.description}</p>
                 </div>
-                
+
             </div>
             
         </main>
