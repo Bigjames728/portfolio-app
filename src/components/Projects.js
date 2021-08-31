@@ -32,7 +32,7 @@ function Projects() {
     return (
         
         <main>
-            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1}} className="flex-container">
+            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1}} className="flex-container-projectList">
             {projects.map((project, index) => {
                 return (
                     <Link className="flex-item module" to={`/projects/${project.id}`} key={project.id}>
