@@ -37,11 +37,15 @@ export default function ProjectDetails({id}) {
                         <img src={ projects.image_urls ?
                                     projects.image_urls[0] :
                                     ''
-                                } className="img--details" />
+                                } className="img--details"
+                             alt=""
+                        />
                         <img src={ projects.image_urls ?
                                     projects.image_urls[1] :
                                     ''
-                                } className="img--details" />
+                                } className="img--details" 
+                              alt=""      
+                        />
                     </div>
 
                     <div className="list--container">
