@@ -81,6 +81,13 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  margin-top: 20px;
+}
+
+/* The below class centered and then stacked images vertically */
+.img--container {
+  display: flex;
+  flex-flow: column nowrap;
   
 }
 
@@ -122,12 +129,7 @@ ul {
   margin-top: 10px;
 }
 
-/* The below class centered and then stacked images vertically */
-.img--container {
-  display: flex;
-  flex-flow: column nowrap;
-  
-}
+
 
 .img--details {
   width: 600px;
