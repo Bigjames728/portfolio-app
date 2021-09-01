@@ -147,6 +147,27 @@ ul {
   transform: scale(1.08);
 }
 
+.pdf {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.button--left {
+  margin-right: 10px;
+}
+
+.button--right {
+  margin-left: 10px;
+}
 
 
 
