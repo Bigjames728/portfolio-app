@@ -45,12 +45,14 @@ body {
 }
 
 .item:hover, .item:focus {
-  border-bottom: solid 1px black;
+  /* border-bottom: solid 1px black; */
 }
 
 .active {
   background: lightgrey;
-  border-bottom: solid 1px black;
+  border-bottom: solid 4px black;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
 .nav {
