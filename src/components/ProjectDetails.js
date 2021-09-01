@@ -30,8 +30,12 @@ export default function ProjectDetails({id}) {
     return (
         <main>
             <div className="flex-container">
-                <h1>Project Details</h1>
-                <h3 className="project--name">{projects.project_name}</h3>
+            <h1>Project Details</h1>
+                <div className="project--title--github">
+                    <h3 className="project--name">{projects.project_name}</h3>
+                     <a href={projects.github_link} className="github--link" target="_blank" rel="noreferrer"><h4><i className="fa fa-github" style={{fontSize: 25}}></i> {projects.github_link}</h4></a>
+                </div>
+
                 <div className="list--container">
                     <h3 className="project--detail--title">Technologies Used</h3>
                         <ul className="course--detail--list">
@@ -47,12 +51,13 @@ export default function ProjectDetails({id}) {
                         </ul>
                 </div>
 
-                    <div className="description">
-                        <h3>Description</h3>
-                        <p>{projects.description}</p>
-                    </div>
+                <div className="description">
+                    <h3>Description</h3>
+                    <p>{projects.description}</p>
+                </div>
 
                 <div className="main--flex">
+
                     <div className="img--container">
                         <img src={ projects.image_urls ?
                                     projects.image_urls[0] :
@@ -66,7 +71,8 @@ export default function ProjectDetails({id}) {
                                 } className="img--details" 
                               alt=""      
                         />
-                    </div>       
+                    </div> 
+
                 </div>
             </div>
         </main>
