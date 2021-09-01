@@ -66,6 +66,7 @@ body {
   flex-wrap: wrap;
   flex-direction: column;
   margin-top: 20px;
+  align-items: center;
 }
 
 .flex-container-projectList {
@@ -113,10 +114,12 @@ ul {
 
 }
 
-.list--container {
+.project--name {
   
-  
-  margin-top: -20px;
+}
+
+.project--detail--title {
+  margin-top: 10px;
 }
 
 /* The below class centered and then stacked images vertically */

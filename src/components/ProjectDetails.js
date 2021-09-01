@@ -31,7 +31,27 @@ export default function ProjectDetails({id}) {
         <main>
             <div className="flex-container">
                 <h1>Project Details</h1>
-                <h3 className="course--name">{projects.project_name}</h3>
+                <h3 className="project--name">{projects.project_name}</h3>
+                <div className="list--container">
+                    <h3 className="project--detail--title">Technologies Used</h3>
+                        <ul className="course--detail--list">
+                            {
+                                projects.technologies ? 
+                                projects.technologies.map(technology => (
+                                    <li key={technology.id}>
+                                        {technology}
+                                    </li>
+                                )) :
+                                ''
+                            }
+                        </ul>
+                </div>
+
+                    <div className="description">
+                        <h3>Description</h3>
+                        <p>{projects.description}</p>
+                    </div>
+
                 <div className="main--flex">
                     <div className="img--container">
                         <img src={ projects.image_urls ?
@@ -46,31 +66,9 @@ export default function ProjectDetails({id}) {
                                 } className="img--details" 
                               alt=""      
                         />
-                    </div>
-
-                    <div className="list--container">
-                        <h3 className="course--detail--title">Technologies Used</h3>
-                        <ul className="course--detail--list">
-                            {
-                                projects.technologies ? 
-                                projects.technologies.map(technology => (
-                                    <li key={technology.id}>
-                                        {technology}
-                                    </li>
-                                )) :
-                                ''
-                            }
-                        </ul>
-                    </div>        
+                    </div>       
                 </div>
-
-                <div className="description">
-                    <h3>Description</h3>
-                    <p>{projects.description}</p>
-                </div>
-
             </div>
-            
         </main>
     )
 }
