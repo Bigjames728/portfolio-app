@@ -33,7 +33,7 @@ export default function ProjectDetails({id}) {
             <h1>Project Details</h1>
                 <div className="project--title--github">
                     <h3 className="project--name">{projects.project_name}</h3>
-                     <a href={projects.github_link} className="github--link" target="_blank" rel="noreferrer"><h4><i className="fa fa-github" style={{fontSize: 25}}></i> {projects.github_link}</h4></a>
+                     <a href={projects.github_link} className="github--link" target="_blank" rel="noreferrer"><h4 className="github--link"><i className="fa fa-github" style={{fontSize: 25}}></i> {projects.github_link}</h4></a>
                 </div>
 
                 <div className="list--container">
