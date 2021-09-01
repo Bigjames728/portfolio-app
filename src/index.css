@@ -53,6 +53,13 @@ body {
   border-bottom: solid 1px black;
 }
 
+.nav {
+  box-sizing: border-box;
+  margin: 10px 10px 0 0;
+  outline: 1px dotted red;
+  
+}
+
 .flex-container {
   display: flex;
   flex-wrap: wrap;
