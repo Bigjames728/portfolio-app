@@ -35,15 +35,14 @@ function Projects() {
             <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1}} className="flex-container-projectList">
             {projects.map((project, index) => {
                 return (
-                    <Link className="flex-item module" to={`/projects/${project.id}`} key={project.id}>
-                        {/* <h2 className="project-name">{project.project_name}</h2> */}
+                    <Link className="flex--item module" to={`/projects/${project.id}`} key={project.id}>
                         <motion.img 
                             initial={{x: 100}}
                             animate={{x:0}}
                             whileHover={{ 
                                 scale: 1.04
                             }}
-                            className="project-images"
+                            className="project--images"
                             src={project.image_urls[0]} 
                         />
                     </Link>
