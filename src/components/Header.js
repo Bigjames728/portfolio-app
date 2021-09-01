@@ -33,7 +33,7 @@ class Header extends React.Component {
                         <div className="nav" key={link.id}>  
                             <NavLink
                                 to={link.url}
-                                className="item"
+                                className="menu--item"
                                 activeClassName="active"
                                 exact={true}
                             >{link.name}</NavLink>
