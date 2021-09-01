@@ -4,7 +4,7 @@
             {
                 "id": "0",
                 "project_name": "Weather App",
-                "description": "Search the weather in any city/country. Image dynamically changes if it's hot or cold.",
+                "description": "Search the weather in any city/country. Image dynamically changes if it's hot or cold. Fetched and consumed the Open Weather API and presented the relevant data on screen.",
                 "technologies": ["React", "CSS", "NodeJS"],
                 "live_link": "",
                 "github_link": "https://github.com/Bigjames728/weather-app",
