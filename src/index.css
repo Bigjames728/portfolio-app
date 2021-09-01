@@ -32,7 +32,7 @@ body {
 }
 
 /*The below code styles the menu buttons at the top */
-.item {
+.menu--item {
   padding: 10px;
   margin-left: 60px;
   margin-right: 20px;
@@ -44,8 +44,9 @@ body {
   font-family: arial black;
 }
 
-.item:hover, .item:focus {
+.menu--item:hover, .item:focus {
   /* border-bottom: solid 1px black; */
+  transform: scale(1.08);
 }
 
 .active {
@@ -91,7 +92,7 @@ body {
   
 }
 
-.project-images {
+.project--images {
   height: 300px;
   width: 300px;
   border-radius: 10px;
@@ -100,11 +101,11 @@ body {
 }
 
 /* no longer working after using framer-motion */
-.project-images:hover {
+.project--images:hover {
   transform: scale(1.05);
 }
 
-.project-name {
+.project--name {
   padding: 10px;
   margin-top: 10px;
   text-decoration: none;
@@ -121,15 +122,9 @@ ul {
 
 }
 
-.project--name {
-  
-}
-
 .project--detail--title {
   margin-top: 10px;
 }
-
-
 
 .img--details {
   width: 600px;
@@ -138,6 +133,16 @@ ul {
 .description {
   width: 770px;
 }
+
+.flex-container-projectList {
+  margin-top: 50px;
+}
+
+.github--link {
+  text-decoration: none;
+  color: black;
+}
+
 
 
 
