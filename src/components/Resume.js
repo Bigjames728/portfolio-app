@@ -30,18 +30,21 @@ function Resume() {
         <Page pageNumber={pageNumber} onLoadSuccess={removeTextLayerOffset} size="A4" />
       </Document>
         <div className="buttons">
-            
-                <button
+            <button
+                className="button--left"
                 onClick={() => {
                     setPageNumber(pageNumber - 1);
-                }}>Previous</button>
-                <p>Page {pageNumber} of {numPages}</p>
-                <button
-                className="button"
+                }}>
+                Previous
+            </button>
+            <p>Page {pageNumber} of {numPages}</p>
+            <button
+                className="button--right"
                 onClick={() => {
                     setPageNumber(pageNumber + 1);
-                }}>Next</button>
-                
+                }}>
+                Next
+            </button>
         </div>
     </div>
   );
