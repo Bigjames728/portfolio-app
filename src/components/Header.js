@@ -1,5 +1,5 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
+import React, { useState } from 'react';
+import { NavLink, Link } from 'react-router-dom';
 import '../index.css'
 
 class Header extends React.Component {
@@ -23,9 +23,9 @@ class Header extends React.Component {
 
         return (
             <div className="header--flex">
-                <header>
-                    <img src='images/logo.PNG' className="header--logo" alt="Logo" />
-                </header>
+                <Link to='/' className="navbar-logo">
+                    <img src='/images/logo.PNG' className="header--logo" alt=""/>
+                </Link>
 
                 {/* I was able to add active tab button by importing NavLink and setting the activeClassName attribute then styling that class in index.css.*/}
                 {links.map(link => {
