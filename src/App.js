@@ -6,11 +6,11 @@ import { BrowserRouter as Router, withRouter, Route, Switch, Redirect } from 're
 import './index.css'
 
 // Components
-import Header from './components/Header';
 import About from './components/About';
 import Resume from './components/Resume';
 import Projects from './components/Projects';
 import ProjectDetails from './components/ProjectDetails';
+import { NavBar } from './components/navbar';
 
 
 
@@ -18,7 +18,7 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <Header />
+        <NavBar />
         <Switch>
             <Route exact path="/" render={() => <Redirect to="/projects" />} />
             <Route exact path="/projects" component={Projects} />
