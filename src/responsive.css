@@ -1,11 +1,23 @@
 @media screen and (max-width: 800px) {
     .description {
         width: 480px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .img--details {
+        width: 480px;
+        display: flex;
+        flex-direction: column;
     }
 }
 
 @media screen and (max-width: 600px) {
     .description {
+        width: 380px;
+    }
+
+    .img--details {
         width: 380px;
     }
 }
