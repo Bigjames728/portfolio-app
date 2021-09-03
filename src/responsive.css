@@ -1,0 +1,11 @@
+@media screen and (max-width: 800px) {
+    .description {
+        width: 480px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .description {
+        width: 380px;
+    }
+}

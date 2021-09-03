@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useCallback } from 'react';
+import '../responsive.css'
 
 export default function ProjectDetails({id}) {
 
@@ -30,8 +31,9 @@ export default function ProjectDetails({id}) {
     return (
         <main>
             <div className="flex-container">
-            <h1>Project Details</h1>
+            
                 <div className="project--title--github">
+                <h1>Project Details</h1>
                     <h3 className="project--name">{projects.project_name}</h3>
                      <a href={projects.github_link} className="github--link" target="_blank" rel="noreferrer"><h4 className="github--link"><i className="fa fa-github" style={{fontSize: 25}}></i> {projects.github_link}</h4></a>
                 </div>
