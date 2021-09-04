@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Document, Page, pdfjs } from 'react-pdf';
+import React from 'react';
+// import { Document, Page, pdfjs } from 'react-pdf';
 import 'react-pdf/dist/esm/Page/AnnotationLayer.css'; // This allows the links inside the pdf to show up and be clickable
 import resumePDF from '../../src/Resume.pdf';
 
@@ -60,7 +60,7 @@ function Resume() {
     //     </div>
     // </div>
     <div className="pdfiframe">
-      <iframe src={`${resumePDF}#view=fitH`} height="100%" width="1200"/>
+      <iframe src={`${resumePDF}#view=fitH`} title="James Fleming Resume" height="100%" width="1200"/>
     </div>
   );
 }
