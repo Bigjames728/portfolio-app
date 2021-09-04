@@ -172,6 +172,7 @@ ul {
 
 .pdfiframe {
   width: auto;
-  height: 1200px;
+  height: 100%;
   margin-top: 35px;
+  overflow: hidden;
 }
