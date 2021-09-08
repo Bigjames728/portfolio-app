@@ -60,7 +60,7 @@ function Resume() {
     //     </div>
     // </div>
     <div className="pdfContainer" position="relative" display="block" width="95%">
-      <iframe src={`${resumePDF}#view=fitH`} title="James Fleming Resume" height="100%" width="95%" frameBorder="0" position="absolute" top="0" left="0" />
+      <iframe src={`${resumePDF}#view=fitH`} title="James Fleming Resume" />
     </div>
   );
 }
