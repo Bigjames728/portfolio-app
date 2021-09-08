@@ -147,14 +147,6 @@ ul {
   transform: scale(1.08);
 }
 
-.pdf {
-  margin-top: 15px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-}
-
 .buttons {
   display: flex;
   flex-direction: row;
@@ -171,19 +163,13 @@ ul {
 }
 
 .pdfContainer {
-  position: relative;
-  width: 100%;
-  padding-bottom: 100%;
-  background: lightgrey;
+  z-index: 1;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.pdfContainer iframe {
-  position: absolute;
-  width: 99%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
+
 
