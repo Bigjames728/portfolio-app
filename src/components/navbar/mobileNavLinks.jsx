@@ -4,6 +4,7 @@ import { Login } from './login';
 import { MenuToggle } from './menuToggle';
 
 const NavLinksContainer = styled.div`
+    z-index: 2;
     margin-top: 2px;
     height: 100%;
     display: flex;
