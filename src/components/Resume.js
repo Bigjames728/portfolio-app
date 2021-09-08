@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Document, Page, pdfjs } from 'react-pdf';
+import React from 'react';
+// import { Document, Page, pdfjs } from 'react-pdf';
 import 'react-pdf/dist/esm/Page/AnnotationLayer.css'; // This allows the links inside the pdf to show up and be clickable
 import resumePDF from '../../src/Resume.pdf';
 
