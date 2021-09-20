@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router-dom';
 
 export default class Education extends Component {
     render() {
@@ -21,7 +20,7 @@ export default class Education extends Component {
                                     <td>Full Stack JavaScript</td>
                                     <td>August 2021</td>
                                     <td>Team Treehouse</td>
-                                    <td><a href="https://www.credential.net/bb745d1d-5db2-4909-85a7-ba9270a3a5c6#gs.b1vei9" target="_blank" className="btn blue lighten-2">View certificate</a></td>
+                                    <td><a href="https://www.credential.net/bb745d1d-5db2-4909-85a7-ba9270a3a5c6#gs.b1vei9" target="_blank" rel="noreferrer" className="btn blue lighten-2">View certificate</a></td>
                                 </tr>
                                 <tr>
                                     <td>Marketing BA</td>

@@ -24,8 +24,8 @@ export default class AboutNew extends Component {
                                 <p><strong>Phone:</strong> (360) 831 1477</p>
                             </div>
                             <div className="s12 m6 l6 xl6">
-                                <p><i class="fab fa-github"><a href="https://github.com/Bigjames728" target="_blank"> github.com/Bigjames728</a></i></p>
-                                <p><i class="fab fa-linkedin-in"><a href="https://www.linkedin.com/in/james-fleming-b5291463/" target="_blank"> linkedin.com/james-fleming</a></i></p>
+                                <p><i class="fab fa-github"><a href="https://github.com/Bigjames728" target="_blank" rel="noreferrer"> github.com/Bigjames728</a></i></p>
+                                <p><i class="fab fa-linkedin-in"><a href="https://www.linkedin.com/in/james-fleming-b5291463/" target="_blank" rel="noreferrer"> linkedin.com/james-fleming</a></i></p>
                             </div>
                         </div>
                     </div>
