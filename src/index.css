@@ -100,7 +100,6 @@ body {
 .project--images {
   height: 300px;
   width: 300px;
-  border-radius: 10px;
   box-shadow: 0px 6px 6px 0 rgba(0, 0, 0, 0.4);
   transition: all .3s;
 }
@@ -161,7 +160,7 @@ ul {
   transform: scale(1.08);
 }
 
-.buttons {
+/* .buttons {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -174,16 +173,14 @@ ul {
 
 .button--right {
   margin-left: 10px;
-}
+} */
 
-.pdfContainer {
+/* .pdfContainer {
   z-index: 1;
   margin-top: 15px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-}
-
-
+} */
 
