@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, withRouter, Route, Switch, Redirect } from 'react-router-dom';
 
+import 'materialize-css/dist/css/materialize.min.css';
 
 // CSS Styles
 import './index.css'
