@@ -29,22 +29,25 @@ export default function ProjectDetails({id}) {
 
     
     return (
-        <main>
+        <main className="project--details--main">
             <div className="flex-container">
             
-                <div className="project--title--github">
-                <h1>Project Details</h1>
+                <div className="project--title">
+                    <h4>Project Details</h4>
+                </div>
+
+                <div>
                     <h3 className="project--name">{projects.project_name}</h3>
-                     <a href={projects.github_link} className="github--link" target="_blank" rel="noreferrer"><h4 className="github--link"><i className="fa fa-github" style={{fontSize: 25}}></i> {projects.github_link}</h4></a>
+                    <a href={projects.github_link} className="github--link" target="_blank" rel="noreferrer"><h4 className="github--link"><i className="fa fa-github" style={{fontSize: 25}}></i> {projects.github_link}</h4></a>
                 </div>
 
                 <div className="list--container">
-                    <h3 className="project--detail--title">Technologies Used</h3>
+                    <h4 className="project--detail--title">Technologies Used</h4>
                         <ul className="course--detail--list">
                             {
                                 projects.technologies ? 
                                 projects.technologies.map(technology => (
-                                    <li key={technology.id}>
+                                    <li className="technologies" key={technology.id}>
                                         {technology}
                                     </li>
                                 )) :
@@ -54,7 +57,7 @@ export default function ProjectDetails({id}) {
                 </div>
 
                 <div className="description">
-                    <h3>Description</h3>
+                    <h4>Description</h4>
                     <p>{projects.description}</p>
                 </div>
 
