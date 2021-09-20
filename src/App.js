@@ -8,7 +8,7 @@ import './index.css'
 
 // Components
 import About from './components/About';
-import Resume from './components/Resume';
+import Resume from './components/Resume/Resume';
 import Projects from './components/Projects';
 import ProjectDetails from './components/ProjectDetails';
 import { NavBar } from './components/navbar';
