@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 
-import Profile from './Resume/Profile';
-import AboutNew from './Resume/AboutNew';
-import Skills from './Resume/Skills';
-import Education from './Resume/Education';
-import Experience from './Resume/Experience';
+import Profile from './Profile';
+import AboutNew from './AboutNew';
+import Skills from './Skills';
+import Education from './Education';
+import Experience from './Experience';
 
 export default class Home extends Component {
     render() {
