@@ -21,7 +21,7 @@ function App() {
       <div className="App">
         <NavBar />
         <Switch>
-            <Route exact path="/" render={() => <Redirect to="/projects" />} />
+            <Route exact path="/" render={() => <Redirect to="/resume" />} />
             <Route exact path="/projects" component={Projects} />
             <Route path="/projects/:id" render={({match}) => <ProjectDetails id={match.params.id} />} />
             <Route exact path="/resume" component={Resume} />
