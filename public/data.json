@@ -4,8 +4,8 @@
             {
                 "id": "0",
                 "project_name": "Exercise Tracker",
-                "description": "Track your exercises and stay on track by submitting your daily exercises right here. You can edit and delete them too.",
-                "technologies": ["MongoDB","Mongoose","Express","React", "CSS", "NodeJS"],
+                "description": "Track your exercises and stay on track in the full stack MERN app by submitting your daily exercises right here. You can edit and delete them too.",
+                "technologies": ["MongoDB","Mongoose","Express","React", "NodeJS", "CSS", "Bootstrap"],
                 "live_link": "",
                 "github_link": "https://github.com/Bigjames728/exercise-tracker",
                 "image_urls": ["/images/exercise-tracker-home.png", "/images/exercise-tracker-add-exercise.png", "/images/exercise-tracker-edit-exercise.png", "/images/exercise-tracker-create-user.png"]

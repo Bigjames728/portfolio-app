@@ -76,6 +76,18 @@ export default function ProjectDetails({id}) {
                                 } className="img--details" 
                               alt=""      
                         />
+                        <img src={ projects.image_urls ?
+                                    projects.image_urls[2] :
+                                    ''
+                                } className="img--details" 
+                              alt=""      
+                        />
+                        <img src={ projects.image_urls ?
+                                    projects.image_urls[3] :
+                                    ''
+                                } className="img--details" 
+                              alt=""      
+                        />
                     </div> 
 
                 </div>
