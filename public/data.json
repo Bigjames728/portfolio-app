@@ -3,6 +3,15 @@
         "projects": [
             {
                 "id": "0",
+                "project_name": "Exercise Tracker",
+                "description": "Track your exercises and stay on track by submitting your daily exercises right here. You can edit and delete them too.",
+                "technologies": ["MongoDB","Mongoose","Express","React", "CSS", "NodeJS"],
+                "live_link": "",
+                "github_link": "https://github.com/Bigjames728/exercise-tracker",
+                "image_urls": ["/images/exercise-tracker-home.png", "/images/exercise-tracker-add-exercise.png", "/images/exercise-tracker-edit-exercise.png", "/images/exercise-tracker-create-user.png"]
+            },
+            {
+                "id": "1",
                 "project_name": "Weather App",
                 "description": "Search the weather in any city/country. Image dynamically changes if it's hot or cold. Fetched and consumed the Open Weather API and presented the relevant data on screen.",
                 "technologies": ["React", "CSS", "NodeJS"],
@@ -11,7 +20,7 @@
                 "image_urls": ["/images/weather-app-1.JPG", "/images/weather-app-2.JPG"]
             },
             {
-                "id": "1",
+                "id": "2",
                 "project_name": "Fehr Law Website",
                 "description": "A website I created for a client includeing a contact us form and a map to their location.",
                 "technologies": ["Bootstrap", "CSS", "HTML", "PHP"],
@@ -20,7 +29,7 @@
                 "image_urls": ["/images/FehrLawSite.png", "/images/FehrLawSiteFullPage.png"]
             },
             {
-                "id": "2",
+                "id": "3",
                 "project_name": "Full Stack Class Creator/Selector",
                 "description": "A web application with protected routes requiring authentication. Once an account has been created, you can create a course or update a course that you have created. You can't update/delete courses that you do not own.",
                 "technologies": ["Node", "React", "Express", "HTML", "CSS", "SQLite"],
