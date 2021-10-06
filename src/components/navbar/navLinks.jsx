@@ -47,9 +47,9 @@ export function NavLinks(props) {
                 <LinkItem>
                 <Link href="/">Resume</Link>
                 </LinkItem>
-                <LinkItem>
+                {/* <LinkItem>
                     <Link href="/about">About</Link>
-                </LinkItem>
+                </LinkItem> */}
                 <LinkItem>
                     <Link href="/projects">Projects</Link>
                 </LinkItem>

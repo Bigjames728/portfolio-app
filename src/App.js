@@ -7,7 +7,7 @@ import 'materialize-css/dist/css/materialize.min.css';
 import './index.css'
 
 // Components
-import About from './components/About';
+// import About from './components/About';
 import Resume from './components/Resume/Resume';
 import Projects from './components/Projects';
 import ProjectDetails from './components/ProjectDetails';
@@ -25,7 +25,7 @@ function App() {
             <Route exact path="/projects" component={Projects} />
             <Route path="/projects/:id" render={({match}) => <ProjectDetails id={match.params.id} />} />
             <Route exact path="/resume" component={Resume} />
-            <Route exact path="/about" component={About} />
+            {/* <Route exact path="/about" component={About} /> */}
         </Switch>
       </div>
     </Router>
