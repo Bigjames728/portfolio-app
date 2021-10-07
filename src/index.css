@@ -83,6 +83,12 @@ body {
   margin-top: 20px;
 }
 
+.flex--item {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
 .main--flex {
   display: flex;
   flex-direction: row;
